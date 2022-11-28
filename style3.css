@@ -1,0 +1,101 @@
+:root {
+    --blanco: white;
+--primerPaso: green;
+--segundoPaso: #FFCE00;
+--tererPaso: red;
+--cuartoPaso: rgb(33, 33, 209);
+
+
+}
+body {
+background-color:#c7e9f1;
+}
+.container{
+width: 100%;
+
+}
+.progessbar{
+counter-reset: step;
+}
+.progessbar li{
+list-style-type: none;
+float: left;
+/*width: 33.33%;*/
+width: 24.99%;
+position: relative; 
+text-align: center;   
+}
+.progessbar li::before{
+/*content: "1";*/
+content:counter(step);
+counter-increment: step;
+width: 30px;
+height: 30px; 
+/*font-weight: bold; */
+line-height: 30px;
+border: 1px solid #ddd;
+display: block;
+text-align: center;
+margin: 0 auto 10px auto;
+border-radius: 50%;
+background-color: var(--blanco);
+}
+.progessbar li::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 1px;
+background-color: var(--gris);
+top: 15px;
+left: -50%;
+z-index: -1;
+}
+.progessbar li:first-child::after{
+content: none;
+}
+
+/*Color al primer paso*/
+.img {
+width: 20%;    
+}
+.step-icon1{
+filter: invert(21%) sepia(50%) saturate(5673%) hue-rotate(104deg) brightness(95%) contrast(105%);
+}
+.step-icon2{
+filter: invert(80%) sepia(36%) saturate(2841%) hue-rotate(360deg) brightness(105%) contrast(104%);
+}
+.step-icon3{
+filter: invert(18%) sepia(85%) saturate(7278%) hue-rotate(358deg) brightness(99%) contrast(111%);
+}
+.step-icon4{
+filter: invert(17%) sepia(84%) saturate(4068%) hue-rotate(233deg) brightness(85%) contrast(93%);
+}
+.progessbar li.paso1 {
+color: var(--primerPaso);    
+}
+.progessbar li.paso1::before{
+border-color: var(--primerPaso);
+}
+.progessbar li.paso1 +li::after{
+background-color: var(--primerPaso);
+}
+
+/*Color al segundo paso*/
+.progessbar li.paso2{
+color: var(--segundoPaso);
+}
+.progessbar li.paso2::before{
+border-color: var(--segundoPaso);
+}
+.progessbar li.paso2 +li::after{
+background-color:var(--segundoPaso);
+}
+/*Color al tercer paso*/
+.progessbar li.paso3{
+color: var(--tererPaso);
+}
+.progessbar li.paso3::before{
+border-color:var(--tererPaso);
+}
+.progessbar li.paso3 +li::after{
+background-color:var(--tererPaso);
