@@ -56,12 +56,10 @@ content: none;
 
 /*Color al primer paso*/
 .img {
-width: 20%;    
-}
-.step-icon1{
-filter: invert(21%) sepia(50%) saturate(5673%) hue-rotate(104deg) brightness(95%) contrast(105%);
+width: 50%;    
 }
 
+/*
 .progessbar li.paso1 {
 color: var(--primerPaso);    
 }
@@ -71,3 +69,4 @@ border-color: var(--primerPaso);
 .progessbar li.paso1 +li::after{
 background-color: var(--primerPaso);
 }
+*/

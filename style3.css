@@ -56,44 +56,7 @@ content: none;
 
 /*Color al primer paso*/
 .img {
-width: 20%;    
-}
-.step-icon1{
-filter: invert(21%) sepia(50%) saturate(5673%) hue-rotate(104deg) brightness(95%) contrast(105%);
-}
-.step-icon2{
-filter: invert(80%) sepia(36%) saturate(2841%) hue-rotate(360deg) brightness(105%) contrast(104%);
-}
-.step-icon3{
-filter: invert(18%) sepia(85%) saturate(7278%) hue-rotate(358deg) brightness(99%) contrast(111%);
+width: 50%;    
 }
 
-.progessbar li.paso1 {
-color: var(--primerPaso);    
-}
-.progessbar li.paso1::before{
-border-color: var(--primerPaso);
-}
-.progessbar li.paso1 +li::after{
-background-color: var(--primerPaso);
-}
 
-/*Color al segundo paso*/
-.progessbar li.paso2{
-color: var(--segundoPaso);
-}
-.progessbar li.paso2::before{
-border-color: var(--segundoPaso);
-}
-.progessbar li.paso2 +li::after{
-background-color:var(--segundoPaso);
-}
-/*Color al tercer paso*/
-.progessbar li.paso3{
-color: var(--tererPaso);
-}
-.progessbar li.paso3::before{
-border-color:var(--tererPaso);
-}
-.progessbar li.paso3 +li::after{
-background-color:var(--tererPaso);

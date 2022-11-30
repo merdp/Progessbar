@@ -53,34 +53,6 @@ z-index: -1;
 .progessbar li:first-child::after{
 content: none;
 }
-
-/*Color al primer paso*/
 .img {
-width: 20%;    
-}
-.step-icon1{
-filter: invert(21%) sepia(50%) saturate(5673%) hue-rotate(104deg) brightness(95%) contrast(105%);
-}
-.step-icon2{
-filter: invert(80%) sepia(36%) saturate(2841%) hue-rotate(360deg) brightness(105%) contrast(104%);
-}
-
-.progessbar li.paso1 {
-color: var(--primerPaso);    
-}
-.progessbar li.paso1::before{
-border-color: var(--primerPaso);
-}
-.progessbar li.paso1 +li::after{
-background-color: var(--primerPaso);
-}
-/*Color al segundo paso*/
-.progessbar li.paso2{
-    color: var(--segundoPaso);
-}
-.progessbar li.paso2::before{
-    border-color: var(--segundoPaso);
-}
-.progessbar li.paso2 +li::after{
-    background-color:var(--segundoPaso);
-}
+    width: 50%;    
+    }
